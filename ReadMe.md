@@ -1,4 +1,4 @@
-# COMPUTER GRAPHICS (PRACTICALS) CLASS: CE 2 (SRID)
+# COMPUTER GRAPHICS (PRACTICALS)
 
 ### MINI PROJECT ON COMPUTER GRAPHICS
 Easy Studios, the makers of many Virtual Reality (VR) movies such as Avengers has contracted you to simulate a 3D virtual scene of moving train for their upcoming movie. Using OpenGL. in Codeblock, create a computer graphics program to have the following simulation details:
