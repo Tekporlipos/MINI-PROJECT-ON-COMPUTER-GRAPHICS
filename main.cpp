@@ -1,26 +1,26 @@
 #include <GL/glut.h> // Include the GLUT library to create a window
 #include <stdio.h>
-// Define the initial position and size of the train
-GLfloat trainPos = 0.0f;
-GLfloat signalColor = 0.0f; // red signal
-GLfloat cometX = -10.0f;
-GLfloat cometY = 10.0f;
-GLfloat cometVelX = 0.1f;
-GLfloat cometVelY = -0.05f;
-bool isNightMode = false;
-bool signalState = false;
-const BOOL GREEN = true;
-const BOOL RED = true;
-const float PI = 3.14159265358979323846;
-const int NUM_SEGMENTS = 50;
-const GLfloat TRAIN_LENGTH = 20.0f;
-const GLfloat TRAIN_WIDTH = 5.0f;
-const GLfloat TRAIN_HEIGHT = 5.0f;
-const GLfloat WHEEL_RADIUS = 1.5f;
-const GLfloat WHEEL_WIDTH = 2.0f;
-GLuint skyboxTextures[5];
-const float STATION_SIZE = 50.0f;
-float trainX = 0.0f;
+    // Define the initial position and size of the train
+    GLfloat trainPos = 0.0f;
+    GLfloat signalColor = 0.0f; // red signal
+    GLfloat cometX = -10.0f;
+    GLfloat cometY = 10.0f;
+    GLfloat cometVelX = 0.1f;
+    GLfloat cometVelY = -0.05f;
+    bool isNightMode = false;
+    bool signalState = false;
+    const BOOL GREEN = true;
+    const BOOL RED = true;
+    const float PI = 3.14159265358979323846;
+    const int NUM_SEGMENTS = 50;
+    const GLfloat TRAIN_LENGTH = 20.0f;
+    const GLfloat TRAIN_WIDTH = 5.0f;
+    const GLfloat TRAIN_HEIGHT = 5.0f;
+    const GLfloat WHEEL_RADIUS = 1.5f;
+    const GLfloat WHEEL_WIDTH = 2.0f;
+    GLuint skyboxTextures[5];
+    const float STATION_SIZE = 50.0f;
+    float trainX = 0.0f;
 void initGL() {
     // Set the clear color to light blue
     glClearColor(0.5f, 0.5f, 1.0f, 1.0f);
@@ -187,7 +187,7 @@ void drawStation() {
     glutSolidCube(1.0f);
     glPopMatrix();
 }
-#define COMET_SIZE 1.0f
+    #define COMET_SIZE 1.0f
 void drawComet() {
     // Set the material properties of the comet
     GLfloat materialAmbient[] = { 1.0, 1.0, 1.0, 1.0 };
@@ -220,15 +220,15 @@ void display() {
     // Set the modelview matrix
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
-GLfloat eyeX = 0.0f;
-GLfloat eyeY = 0.0f;
-GLfloat eyeZ = 100.0f;
-GLfloat centerX = 0.0f;
-GLfloat centerY = 0.0f;
-GLfloat centerZ = 0.0f;
-GLfloat upX = 0.0f;
-GLfloat upY = 1.0f;
-GLfloat upZ = 0.0f;
+    GLfloat eyeX = 0.0f;
+    GLfloat eyeY = 0.0f;
+    GLfloat eyeZ = 100.0f;
+    GLfloat centerX = 0.0f;
+    GLfloat centerY = 0.0f;
+    GLfloat centerZ = 0.0f;
+    GLfloat upX = 0.0f;
+    GLfloat upY = 1.0f;
+    GLfloat upZ = 0.0f;
     // Set the camera position and orientation
     gluLookAt(eyeX, eyeY, eyeZ, centerX, centerY, centerZ, upX, upY, upZ);
 
